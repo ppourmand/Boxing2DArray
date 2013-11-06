@@ -1,3 +1,6 @@
+// Pasha Pourmand
+// November 6, 2013
+
 #include <stdio.h>
 
 // put whatever the fuck values you want
@@ -9,7 +12,7 @@ void printArrayBoxes(int arr[ROW][COL]){
 	int i;
 	int j;
 	int k;
-	
+		
 	for(i = 0; i < ROW;i++){
 		for(k = 0; k < COL; k++){
 			printf("|-----");
@@ -20,7 +23,6 @@ void printArrayBoxes(int arr[ROW][COL]){
 			printf("%4d |", arr[i][j]);
 		}
 		printf("\n");
-
 	}
 	for(k = 0; k < COL; k++){
 		printf("|-----");
@@ -40,7 +42,5 @@ int main(int argc, char **argv)
 	}
 	
 	printArrayBoxes(lol);
-	
-	
 	return 0;
 }
